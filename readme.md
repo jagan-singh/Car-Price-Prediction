@@ -8,10 +8,6 @@ title_status etc. I cleaned the dataset as much as I could. I ran three hypothes
 tests on different columns of the dataset. Main task in this project was to create
 model that can predict car prices.
 
-## Project Goals
-
-
-
 ## Data Cleaning
 
 
