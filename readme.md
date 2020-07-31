@@ -15,12 +15,18 @@ of the columns had nan values. The column odometer had some missing values, I co
 just remove all those rows. So I replaced odometer values with median odometer value of
 make year of that car. I dropped cars with price less than 1000 with miles less than 60,000
  and model year greater than 2010. After data cleaning I had only 387772 rows.
+ 
+ The dataset can be found here:\
+ https://www.kaggle.com/austinreese/craigslist-carstrucks-data
 
 ## Hypothesis tests
 I performed three hypothesis tests on the data.
 1. To check if there is a significant difference in  Mean price of diesel and gas cars.
+![](images/gas_diesel.png)\
 2. To check if Mean price of rwd is lesser or equal than the mean price of fwd.
+![](images/rwd_fwd.png)\
 3. To check if there is a significant relation between price and condition.
+![](images/avg_price_condition.png)\
 
 ## Feature Engineering
 For Feature Engineering the main thing I did was to go through the description of
@@ -33,7 +39,15 @@ In my analysis, I checked the number of cars for sale by each brand. I created a
 bar graph of top 10 brands with highest number of cars for sale. 17% of all the cars
 were ford and chevrolet was second with 15% of the cars. Then I looked at the type of cars
 on sale and most of them were SUVs and Sedans. I also compared car fuel types with average miles
-to see what kind of vehicles average more miles. Some of the visualization are following:
+to see what kind of vehicles average more miles. Some of the visualization are following:\
+
+![](images/price_dist.png)\\
+
+![](images/top_brand.png)\\
+
+![](images/cars_type.png)\\
+
+![](images/by_condition.png)\\
 
 
 ## Feature Selection
@@ -60,3 +74,6 @@ the prices of cars. There are many more variables about a car that contribute to
 than I had in this dataset e.g. Physical conditions of a car, cleaniness of a car or more
 information about engine. In Future, I will find a better dataset with more variables and
 fix this model.
+
+Here is the link to my presentation:\
+https://docs.google.com/presentation/d/1gWcfUn1kNUX9ts-PIlUbqwkl0uQv5NScSN42g_im-u8/edit?usp=sharing
