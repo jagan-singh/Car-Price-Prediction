@@ -15,6 +15,9 @@ of the columns had nan values. The column odometer had some missing values, I co
 just remove all those rows. So I replaced odometer values with median odometer value of
 make year of that car. I dropped cars with price less than 1000 with miles less than 60,000
  and model year greater than 2010. After data cleaning I had only 387772 rows.
+ 
+ The dataset can be found here:\
+ https://www.kaggle.com/austinreese/craigslist-carstrucks-data
 
 ## Hypothesis tests
 I performed three hypothesis tests on the data.
@@ -36,7 +39,8 @@ In my analysis, I checked the number of cars for sale by each brand. I created a
 bar graph of top 10 brands with highest number of cars for sale. 17% of all the cars
 were ford and chevrolet was second with 15% of the cars. Then I looked at the type of cars
 on sale and most of them were SUVs and Sedans. I also compared car fuel types with average miles
-to see what kind of vehicles average more miles. Some of the visualization are following:
+to see what kind of vehicles average more miles. Some of the visualization are following:\
+
 ![](images/price_dist.png)\\
 
 ![](images/top_brand.png)\\
