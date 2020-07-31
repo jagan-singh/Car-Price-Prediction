@@ -61,5 +61,5 @@ than I had in this dataset e.g. Physical conditions of a car, cleaniness of a ca
 information about engine. In Future, I will find a better dataset with more variables and
 fix this model.
 
-Here is the link to my presentation:
+Here is the link to my presentation:\
 https://docs.google.com/presentation/d/1gWcfUn1kNUX9ts-PIlUbqwkl0uQv5NScSN42g_im-u8/edit?usp=sharing
