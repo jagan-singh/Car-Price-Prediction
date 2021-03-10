@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Prices</title>
+</head>
+<body>
+<div>
+    <h1>Car Prices</h1>
+   <form method=post enctype=multipart/form-data>
+    <label for="year">Year</label>
+    <input type="text" id="year" name="year">
+    <br>
+     <label for="miles">Miles</label>
+    <input type="text" id="miles" name="miles">
+    <br>
+    <label for="fuel">Fuel</label>
+    <select id="fuel" name="fuel">
+      <option value="0">Gas</option>
+      <option value="1">Diesel</option>
+      <option value="2">Hybrid</option>
+      <option value="3">Electric</option>
+      <option value="4">Other</option>
+    </select>
+
+<br>
+    <input type="submit" value="Submit">
+  </form>
+    My prediction: {{ pred }}
+    </div>
+    </body>
+</html>
