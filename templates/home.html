@@ -7,7 +7,7 @@
 <body>
 <div>
     <h1>Car Prices</h1>
-   <form method=post enctype=multipart/form-data>
+   <form action="{{ url_for('predict') }}" method="POST">
     <label for="year">Year</label>
     <input type="text" id="year" name="year">
     <br>
@@ -50,7 +50,7 @@
     </select>
 
 <br>
-       <label for="Title Status">Title Status</label>
+       <label for="title_status">Title Status</label>
       <select id="title_status" name="title_status">
       <option value="0">Lien</option>
       <option value="1">Rebuilt</option>
@@ -59,9 +59,9 @@
 
 <br>
        
-       <button type="submit" value="Submit">Submit</button>
+       <input type="submit">
   </form>
-    My prediction: {{ pred }}
+
     </div>
     </body>
 </html>
