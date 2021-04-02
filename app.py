@@ -13,11 +13,11 @@ def home():
 @app.route('/predict',methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
-        year = Flask.request.form['year']
-        miles = Flask.request.form['miles']
-        fuel = Flask.request.form['fuel']
-        cylinders = Flask.request.form['cylinders']
-        condition = Flask.request.form['condition']
+        year = request.form['year']
+        miles = request.form['miles']
+        fuel = request.form['fuel']
+        cylinders = request.form['cylinders']
+        condition = request.form['condition']
 
         features = np.array([2.0100e+03, 8.0000e+00, 3.2742e+04, 0.0000e+00, 0.0000e+00,
                             1.0000e+00, 0.0000e+00, 0.0000e+00, 1.0000e+00, 0.0000e+00,
@@ -40,10 +40,9 @@ def predict():
 
         prediction = model.predict(features)
         output = round(prediction[0], 2)
-        return render_template('home.html', pred = 'Expected price is {}'.format(prediction))
+        return render_template('home.html', pred='Expected price is {}'.format(prediction))
     else:
         return render_template('home.html')
-
 
 if __name__ == "__main__":
     app.run()
