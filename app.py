@@ -18,6 +18,8 @@ def predict():
         fuel = request.form['fuel']
         cylinders = request.form['cylinders']
         condition = request.form['condition']
+        transmission = request.form['transmission']
+        title_status = request.form['title_status']
 
         features = np.array([2.0100e+03, 8.0000e+00, 3.2742e+04, 0.0000e+00, 0.0000e+00,
                             1.0000e+00, 0.0000e+00, 0.0000e+00, 1.0000e+00, 0.0000e+00,
